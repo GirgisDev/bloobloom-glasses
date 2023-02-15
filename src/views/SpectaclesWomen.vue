@@ -45,7 +45,6 @@ export default class SpectaclesWomen extends Vue {
     try {
       const spectaclesData = await spectaclesResource.fetchSpectaclesWomen();
       this.items = spectaclesData.glasses;
-      console.log(this.items);
     } catch (error) {
       this.listError = true;
     } finally {
