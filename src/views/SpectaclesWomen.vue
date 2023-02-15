@@ -71,7 +71,7 @@ export default class SpectaclesWomen extends Vue {
     }
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
   .spectacles-women {
     &__list {
       display: grid;
