@@ -2,7 +2,7 @@
   <div class="spectacles-women">
     <SpectaclesHeader title="Spectcales Women" />
     <div>
-      <div v-if="loading">Loading...</div>
+      <Loading v-if="loading" />
       <NoContent
         v-else-if="!loading && listError"
         msg="There may be no content to show or an error happened!"
@@ -22,6 +22,7 @@
 import { Options, Vue } from 'vue-class-component';
 import SpectaclesHeader from '@/components/SpectcaleHeader.vue';
 import NoContent from '@/components/NoContent.vue';
+import Loading from '@/components/Loading.vue';
 import GlassesItem from '@/components/GlassesItem.vue';
 import spectaclesResource from '@/resources/spectacles-resource';
 
@@ -29,6 +30,7 @@ import spectaclesResource from '@/resources/spectacles-resource';
   components: {
     SpectaclesHeader,
     NoContent,
+    Loading,
     GlassesItem,
   },
 })
