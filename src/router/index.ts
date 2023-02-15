@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import HomeView from '../views/HomeView.vue';
+import SpectaclesWomen from '../views/SpectaclesWomen.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -9,15 +9,27 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/spectacles-women',
     name: 'home',
-    component: HomeView,
+    component: SpectaclesWomen,
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
+    path: '/spectacles-men',
+    name: 'spectacles-men',
+    component: () => import(/* webpackChunkName: "SpectaclesMen" */ '../views/SpectaclesMen.vue'),
+  },
+  {
+    path: '/sunglasses',
+    name: 'sunglasses',
+    component: () => import(/* webpackChunkName: "SunGlasses" */ '../views/SunGlasses.vue'),
+  },
+  {
+    path: '/home-try-on',
+    name: 'home-try-on',
+    component: () => import(/* webpackChunkName: "HomeTryOn" */ '../views/HomeTryOn.vue'),
+  },
+  {
+    path: '/pair-for-pair',
+    name: 'pair-for-pair',
+    component: () => import(/* webpackChunkName: "PairForPair" */ '../views/PairForPair.vue'),
   },
 ];
 
