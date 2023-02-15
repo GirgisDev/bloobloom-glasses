@@ -104,6 +104,7 @@ export default class NavigationMenu extends Vue {
   max-width: 280px;
   height: calc(100vh - 70px);
   position: absolute;
+  z-index: 1;
   background-color: #FFF;
   top: 70px;
   left: 0;

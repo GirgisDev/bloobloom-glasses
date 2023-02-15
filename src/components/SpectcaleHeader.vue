@@ -45,4 +45,14 @@ export default class SpectaclesHeader extends Vue {}
       display: flex;
     }
   }
+
+  @media screen and (max-width: 870px) {
+    .spectacles-header {
+      grid-template: 1fr / 0px repeat(2, 1fr);
+
+      &__title {
+        font-size: 1.4rem;
+      }
+    }
+  }
 </style>

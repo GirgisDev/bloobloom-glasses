@@ -16,7 +16,6 @@
         @focusin="showNavMenu = true"
         @mouseleave="showNavMenu = false"
         @blur="showNavMenu = false"
-        class="section"
       />
     </transition>
   </div>
